@@ -1,0 +1,35 @@
+package com.ug3.soal1;
+import java.util.scanner;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+		String nama, tgl;
+		int jumlah, berat;
+		
+		Scanner input = new Scanner9System.in);
+        System.out.println("=============Data Product==========\n");
+		System.out.print("Nama Makanan: ");
+		nama = input.nextLine();
+		
+		System.out.print("Tanggal Kadaluarsa: ");
+		tgl = input.nextLine();
+		
+		System.out.print("Jumlah (quantity): ");
+		jumlah = input.nextInt();
+		
+		System.out.print("Berat (gram): ");
+		berat = input.nextInt();
+		
+		System.out.println("=============Data Product==========\n");
+		System.out.println("Nama Makanan: " + nama);
+		System.out.println("Tanggal Kadaluarsa: " + tgl);
+		System.out.println("jumlah (quantity): " + jumlah);
+		System.out.println("Berat (gram): " + berat);
+    }
+}

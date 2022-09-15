@@ -1,10 +1,6 @@
 package com.ug3.soal1;
-import java.util.scanner;
+import java.util.Scanner;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )
@@ -12,7 +8,7 @@ public class App
 		String nama, tgl;
 		int jumlah, berat;
 		
-		Scanner input = new Scanner9System.in);
+		Scanner input = new Scanner(System.in);
         System.out.println("=============Data Product==========\n");
 		System.out.print("Nama Makanan: ");
 		nama = input.nextLine();

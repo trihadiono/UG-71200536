@@ -12,7 +12,7 @@ public class App
 		String nama, tgl;
 		int jumlah, berat;
 		
-		Scanner input = new Scanner9System.in);
+		Scanner input = new Scanner(System.in);
         System.out.println("=============Data Product==========\n");
 		System.out.print("Nama Makanan: ");
 		nama = input.nextLine();
@@ -21,10 +21,10 @@ public class App
 		tgl = input.nextLine();
 		
 		System.out.print("Jumlah (quantity): ");
-		jumlah = input.nextLine();
+		jumlah = input.nextInt();
 		
 		System.out.print("Berat (gram): ");
-		berat = input.nextLine();
+		berat = input.nextInt();
 		
 		System.out.println("=============Data Product==========\n");
 		System.out.println("Nama Makanan: " + nama);

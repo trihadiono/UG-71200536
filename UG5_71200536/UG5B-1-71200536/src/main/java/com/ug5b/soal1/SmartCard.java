@@ -1,4 +1,4 @@
-import static java.lang.Long.parseLong;
+package com.ug5b.soal1;
 
 public class SmartCard {
     private String nama;
@@ -21,13 +21,13 @@ public class SmartCard {
     }
 
     public void topUp(Voucher vch){
-        if (vch.getVoucher().equals("VC")){
-            System.out.println("Kode Voucher: " +vch.getVoucher()+ "|| Top up gagal! Kode voucher tidak valid.");
+        if (vch.getKode().equals("VC")){
+            System.out.println("Kode Voucher: " +vch.getKode()+ "|| Top up gagal! Kode voucher tidak valid.");
         }else{
-            String [] separated = vch.getVoucher().split("C", 2);
+            String [] separated = vch.getKode().split("C", 2);
             Long l = Long.parseLong(separated[1]);
             saldo+=1;
-            System.out.println("Kode Voucher: " +vch.getVoucher()+ "Top up sukses!" );
+            System.out.println("Kode Voucher: " +vch.getKode()+ "Top up sukses!" );
         }
     }
 }

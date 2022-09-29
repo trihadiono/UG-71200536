@@ -17,4 +17,8 @@ public class Voucher {
             kode ="VC"+nominal;
         }
     }
+
+    public String getVoucher() {
+        return kode;
+    }
 }

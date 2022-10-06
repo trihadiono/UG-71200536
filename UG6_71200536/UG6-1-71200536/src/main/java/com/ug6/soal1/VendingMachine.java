@@ -37,7 +37,11 @@ public class VendingMachine {
         return consumerMoney;
     }
     public void inputGoods(Goods goods){
-
+        if (goods.getQuantity()<=capacity-usedCapacity){
+            usedCapacity+=1;
+        }else{
+            System.out.println("Jumlah barang telah melampaui kapasitas maximal");
+        }
     }
 
     public int getCode() {

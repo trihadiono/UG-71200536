@@ -7,8 +7,7 @@ public class DragonKnight extends PhysicalCharacter {
     }
     private int dragonFormAttack;
     public void skill(){
-        this.dragonFormAttack = dragonFormAttack;
-        return;
+        int dragonFormAttack = 2;
     }
     public void attack(Character character) {
         return;

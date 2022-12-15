@@ -29,7 +29,16 @@ public class DAO {
     public static void inputJadwal(Jadwal jadwal) {
     }
 
-    public static void inputPasien(Pasien pasien) {
+    public static void inputPasien(Pasien pasien) throws ClassNotFoundException, SQLException {
+        Class.forName("org.mariadb.jdbc.Driver");
+        Connection con = DriverManager.getConnection("jdbc:mariadb://localhost:3306/rumahsakit", "root", "");
+        Statement st = con.createStatement();
+        String sql = "insert into pasien values ("+pasien.getRm()+",'"+pasien.getNama()+"',"+pasien.getUsia()+",'"+pasien.getAlamat()+"');";
+        ResultSet rs = st.executeQuery(sql);
+        con.close();
+        System.out.println("Data Pasien Berhasil Disimpan !");
+
+    }
     }
 
     public static void getPasienSembuh() {
